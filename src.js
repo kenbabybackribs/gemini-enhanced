@@ -352,7 +352,7 @@ const handleOutgoingChat = () => {
                 <img src="${user.photoSrc}" alt="User image" class="avatar">
                 <div class="upload-icon"></div>
             </label>
-            <input type="file" id="avatar-file" accept="images/*" style="display: none;">
+            <input type="file" id="avatar-file" accept="image/**" style="display: none;">
         </div>
         <p class="text"></p>
     </div>`;
