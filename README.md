@@ -30,7 +30,7 @@ To set up Gemini Enhanced on your local machine, follow these steps:
  
    ```bash
    git clone https://github.com/kenbabybackribs/gemini-enhanced.git
-   cd dreverb
+   cd gemini-enhanced
    ```
 
 
