@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini</title>
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg" type="image/x-icon">
+
+    <!--google font icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!--google font text-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!--css file-->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="overlay hidden"></div>
+    <div class="gemini-log-in hidden">
+        <div class="gemini-card picture">
+            <div class="gemini-content">
+                <div class="gemini-choose-picture">
+                    <label for="choose-picture">
+                        <div class="profile-picture-wrapper">
+                            <img src="images/person.jpg" alt="" class="user-chosen-profile-picture">
+                        </div>
+                    </label>
+                    <input type="file" id="choose-picture" accept="imges/*" style="display: none;" >
+            </div>
+            </div>
+        </div>
+        <div class="gemini-card name">
+            <div class="gemini-content">
+                <form class="gemini-input-form">
+                    <div class="gemini-input-wrapper">
+                        <input required placeholder="First Name" type="text" class="gemini-input">
+                        <span class="icon material-symbols-rounded">
+                            person
+                            </span>
+                    </div>
+                </form>
+                <form class="gemini-log-in-submit-form">
+                    <button class="gemini-btn-submit">I'm ready to use Gemini</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <!--container-->
+    <div class="container ">
+        <header class="header">
+            <!--header greeting-->
+            <div class="header-wrapper">
+                <div class="header-content">
+                    <div class="header-titles">
+                        <h2 class="title"> Gemini</h2>
+                        <h4 class="subtitle">How can i help you today?</h4>
+                        <div class="edit">
+                            <div class="edit-icon">
+                                <span class="icon material-symbols-rounded">
+                                    edit
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-pic-wrapper">
+                    </div>
+                </div>
+            </div>
+            <!--edit input-->
+            <div class="edit-input hidden-2">
+                <div class="edit-content">
+                    <div class="display-wrapper">
+                        <img src="images/keandre.JPG" alt="" class="display-img">
+                    </div>
+                    <form  class="edit-input-form">
+                        <div class="edit-input-wrapper">
+                            <input type="text" 
+                            required placeholder="First Name" class="edited-input">
+                        </div>
+                    </form>
+                </div>
+                <div class="edit-input-btns">
+                    <button  class="btn cancel">Cancel</button>
+                    <button class="btn update">Update</button>
+                </div>
+            </div>
+            <!-- suggestion list-->
+            <ul class="suggestion-list  hidden-2 ">
+    
+                <li class="suggestion">
+                    <h4 class="text">Help me plan a game night with my 5 best friends for under $100.</h4>
+                    <span class="icon material-symbols-rounded">
+                        draw
+                        </span>
+                </li>
+    
+                <li class="suggestion">
+                    <h4 class="text">What are the best tips to improve my public speaking skills?</h4>
+                    <span class="icon material-symbols-rounded">
+                        lightbulb
+                        </span>
+                </li>
+    
+                <li class="suggestion">
+                    <h4 class="text">Can you help me find the latest news on web development?</h4>
+                    <span class="icon material-symbols-rounded">
+                        explore
+                        </span>
+                </li>
+    
+                <li class="suggestion">
+                    <h4 class="text">Write Javascript code to sum all elements in an array</h4>
+                    <span class="icon material-symbols-rounded">
+                        code
+                        </span>
+                </li>
+            </ul>
+        </header>
+
+        <!--chat list-->
+        <div class="chat-list">
+        </div>
+        
+        <!--typing area-->
+        <div class="typing-area">
+            <form action="#" class="typing-form">
+                <div class="input-wrapper">
+                    <input type="text" placeholder="Enter a prompt here" required class="typing-input">
+                    <button  class="icon material-symbols-rounded">arrow_upward</button>
+                </div>
+                <div class="action-buttons">
+                    <span id="toggle-theme"  class="icon material-symbols-rounded">light_mode</span>
+                    <span id="delete-chat" class="icon material-symbols-rounded">delete</span>
+                </div>
+            </form>
+            <p class="disclaimer-text">
+                Gemini may display inaccurate info, including about people so double-check its responses. <a class="disclaimer-text-bold" href="https://support.google.com/gemini/answer/13594961?visit_id=638605197822137426-1785113143&p=privacy_notice&rd=1#privacy_notice">Your privacy and Gemini Apps</a>
+            </p>
+        </div>
+    </div>
+
+
+    <script src="src.js"></script>
+</body>
+</html>
